@@ -12,15 +12,16 @@
     <!-- NAVIGATION BAR -->
 <head>
     <div class="navbar">
-        <a class="active" href="/Lynn_Portfolio-main/index.html">HOME</a>
-        <a href="/Lynn_Portfolio-main/about.html">ABOUT</a>
-        <a href="/Lynn_Portfolio-main/projects.html">PROJECTS</a>
-        <a href="/Lynn_Portfolio-main/contact.html">CONTACT</a>
+        <a href="#landing" id="link-landing">HOME</a>
+        <a href="#about" id="link-about">ABOUT</a>
+        <a href="#projects" id="link-projects">PROJECTS</a>
+        <a href="#contact" id="link-contact">CONTACT</a>
     </div>
 </head>
 
-<!-- MAIN CONTENT -->
-<section id="landing">
+<div class="content">
+    <!-- HOME SECTION -->
+<section class="section" id="landing">
     <div class="container">
         <!-- Name and title -->
         <div>
@@ -38,36 +39,111 @@
         </div>
         <!-- profile photo -->
         <div >
-            <img class="profile-photo" src="/Lynn_Portfolio-main/assets/Screenshot 2024-09-13 220756.png" alt="">
+            <img class="profile-photo" src="/Lynn_Portfolio-main/lynn.jpg" alt="lynn_profile_photo"
+            style="border: solid, 2em; border-color:  rgb(255, 123, 0);">
         </div>
     </div>
-</section>    
+</section> 
 
-    <!-- Content Sections -->
-    <div class="content">
-        <div class="section" id="home">
-            <h1>Home</h1>
-            <p>This is the Home section.</p>
+<!-- ABOUT SECTION -->
+<section class="section" id="about">
+    <!-- Intro -->
+    <div class="information" style="background-color: black; opacity: 70%;">
+        <h1 id="about-me">About Me</h1>
+        <p id="about-me-text">I am a passionate about Software Engineer and UI/UX design with experience in
+            <br>various languages and tools including 
+             react, javascript, python, html, css, <br> flask, postgreSQL, MySQL, figma, and canva.</p>
+
+
+    </div>
+
+    <div class="education">
+        <div>
+            <!-- <img src="/Lynn_Portfolio-main/assets/graduation-hat.png" alt=""> -->
         </div>
-
-        <div class="section" id="about">
-            <h1>About</h1>
-            <p>This is the About section.</p>
+        <h1>Education</h1>
+        <div class="school">
+ 
+            <div class="highschool">
+                <h3>Moi Girls High School</h3>
+            </div>
+            <div class="university">
+                <h3>Kenyatta university</h3>
+            </div>
+            <div class="professional-certifications">
+                <h3>Moringa School Boot Camp</h3>
+                <h3>ALX Academy</h3>
+                <h3>PLP Academy</h3>
+            </div>
         </div>
-
-        <div class="section" id="projects">
-            <h1>Projects</h1>
-            <p>This is the Projects section.</p>
-        </div>
-
-        <div class="section" id="contact">
-            <h1>Contact</h1>
-            <p>This is the Contact section.</p>
+    </div>
+    <!-- Skills -->
+    <div class="skills" >
+        <h1>My Skills</h1>
+        <div class="language-logos">
+            <img src="/Lynn_Portfolio-main/html.webp" alt="html" style="width: 2em;">
+            <img src="/Lynn_Portfolio-main/css.webp" alt="css" style="width: 2em;">
+            <img src="/Lynn_Portfolio-main/javascrip.webp" alt="javascript" style="width: 2em;">
+            <img src="/Lynn_Portfolio-main/python.webp" alt="python" style="width: 2em;">
+            <img src="/Lynn_Portfolio-main/flask1.webp" alt="flask" style="width: 2em;">
+            <img src="/Lynn_Portfolio-main/react.webp" alt="reactjs" style="width: 2em;">
+            <img src="/Lynn_Portfolio-main/prosql.webp" alt="postgreSQL" style="width: 2em;">
+            <img src="/Lynn_Portfolio-main/canva.webp" alt="canva" style="width: 2em;">
+            <img src="/Lynn_Portfolio-main/figmaicon.webp" alt="figma" style="width: 2em;">
         </div>
     </div>
 
-<footer>
-    <p style="color: aliceblue; padding-left: 10em; position: static; ">&copy; 2024 Lynn Nyaoke. All rights reserved.</p>
+    <!-- <div class="experience" style="border: solid;">
+        <h1>My Experience</h1>
+    </div> -->
+    
+
+
+</section>
+
+
+<!-- PROJECTS SECTION -->
+<section class="section" id="projects">
+
+</section>
+
+
+<!-- CONTACT SECTION -->
+<section class="section" id="contact">
+    <div class="contact-form">
+        <h2 id="contact-me">Contact Me</h2>
+        <form id="contactForm" action="YOUR_SERVER_ENDPOINT" method="POST">
+            <div id="formMessage" class="error"></div>
+
+            <textarea  placeholder="Name" id="" name="name"  required></textarea>
+<br>
+            <input  placeholder="email address" type="email" id="email" name="email" required>
+<br>
+            <textarea  placeholder="Message" id="message" name="message" rows="6" required></textarea>
+            <br>
+            <button type="submit" style="max-width: 10em; max-height: 7em;">Send Message</button>
+        </form>
+        <br><br>
+        <div class="social-icons-contact">
+            <a href="https://x.com/LynnNyaoke" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/lynn-nyaoke-058b43216/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://medium.com/@lynnnyaoke" target="_blank"><i class="fab fa-medium"></i></a>
+            <a href="https://github.com/Wiztech-01" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <div>
+            <p>            Mobile Number: +254 700 604 96
+            </p>
+        </div>
+    </div>
+
+
+</section>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p style="color: orange; padding-left: 10em; position: static; ">&copy; 2024 Lynn Nyaoke. All rights reserved.</p>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
